@@ -22,3 +22,4 @@ alias hisg="history | grep -i"
 # sistema
 alias desligar="sudo shutdown"
 alias reiniciar="sudo shutdown -r"
+

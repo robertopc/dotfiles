@@ -1,3 +1,12 @@
 [user]
 	name = robertopc
 	email = robertopc.prog@gmail.com
+
+[core]
+	editor = vim
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfile = ~/.gitignore
+
+[alias]
+	logone = log --oneline
+	
