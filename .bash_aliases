@@ -17,9 +17,18 @@ alias ln="ln -i"
 
 # history
 alias hism="history | more"
+alias hisl="history | less"
 alias hisg="history | grep -i"
 
 # sistema
 alias desligar="sudo shutdown"
 alias reiniciar="sudo shutdown -r"
 
+# folders
+alias music="cd ~/Music"
+alias pictures="cd ~/Pictures"
+alias videos="cd ~/Videos"
+alias docs="cd ~/Documents"
+alias downloads="cd ~/Downloads"
+alias desktop="cd ~/Desktop"
+alias dropbox="cd ~/Dropbox"
