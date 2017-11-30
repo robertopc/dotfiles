@@ -1,2 +1,3 @@
-" convertendo o tab para 4 espaços 
-set softtabstop=4
+" convertendo o tab para 4 espaços
+
+set softtabstop=2
