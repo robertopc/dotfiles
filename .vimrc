@@ -1,3 +1,5 @@
-" convertendo o tab para 4 espaços
+" RobertoPC settings vim
 
-set softtabstop=2
+set nu		  " numera as linhas
+set cursorline	  " destaca a linha do cursor
+set softtabstop=2 " converte tab para 2 espaces
