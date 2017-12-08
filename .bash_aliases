@@ -21,8 +21,8 @@ alias hisl="history | less"
 alias hisg="history | grep -i"
 
 # sistema
-alias desligar="sudo shutdown"
-alias reiniciar="sudo shutdown -r"
+alias desligar="sudo shutdown -h 0"
+alias reiniciar="sudo shutdown -r 0"
 
 # folders
 alias music="cd ~/Music"
