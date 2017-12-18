@@ -4,10 +4,11 @@ set nu		  " numera as linhas
 set cursorline	  " destaca a linha do cursor
 set softtabstop=2 " converte tab para 2 espaces
 
-" Vundle, the plug-in manager for Vim http://github.com/VundleVim/Vundle.Vim
+" Vundle, the plug-in manager for Vim
+" http://github.com/VundleVim/Vundle.Vim
 
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible  " be iMproved, required
+filetype off      " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -27,7 +28,7 @@ Plugin 'tpope/vim-fugitive'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
-Plugin 'file:///home/gmarik/path/to/plugin'
+" Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
