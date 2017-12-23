@@ -32,3 +32,6 @@ alias docs="cd ~/Documents"
 alias downloads="cd ~/Downloads"
 alias desktop="cd ~/Desktop"
 alias dropbox="cd ~/Dropbox"
+
+# Python
+alias manage="python $VIRTUAL_ENV/manage.py"
