@@ -35,3 +35,4 @@ alias dropbox="cd ~/Dropbox"
 
 # Python
 alias manage="python $VIRTUAL_ENV/manage.py"
+alias virtualenv3="virtualenv -p /usr/bin/python3"

@@ -1,0 +1,42 @@
+# Esta função altera o prompt padrão
+# extrai esse código do github: https://github.com/ManuelSchneid3r/desktop/blob/master/sh/All
+# adicionei o simbol para deixar a # no root(antes estava o $)
+set_bash_prompt(){
+
+  local retval=$?
+  local ps1=""
+  local simbol='\$'
+
+  # Return value
+  if [ $retval -ne 0 ]; then
+    ps1+="(\[\e[31m\]${retval}\[\e[0m\]) "
+  fi
+
+  # Make root shell red
+  if [[ ${EUID} == 0 ]]; then
+    ps1+="\[\e[31m\]"
+    simbol='#'
+  else
+    ps1+="\[\e[${hostcolor}m\]"
+  fi
+  
+  ps1+="\u@\h\[\e[0m\] \W"
+
+  # Print branch if any
+  BRANCH=`git rev-parse --abbrev-ref HEAD 2>/dev/null`
+  
+  if [[ $? == 0 ]];then
+    ps1+=" \[\e[3;36m\][$BRANCH]\[\e[0m\]"
+  fi
+
+  # Print EUID char in host color
+  ps1+=" \[\e[${hostcolor}m\]${simbol}\[\e[0m\] "
+
+  # Assign ps1
+  PS1="${ps1}"
+}
+
+PROMPT_COMMAND=set_bash_prompt
+PS2='> '
+PS3='> '
+PS4='+ '  
