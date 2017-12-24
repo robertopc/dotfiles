@@ -6,9 +6,6 @@ alias ..="cd .."
 alias ....="cd ../.."
 alias ......="cd ../../.."
 
-# atalho para o app hub do github
-alias github=hub
-
 # força interatividade
 alias rm="rm -i"
 alias mv="mv -i"
@@ -25,13 +22,13 @@ alias desligar="sudo shutdown -h 0"
 alias reiniciar="sudo shutdown -r 0"
 
 # folders
-alias music="cd ~/Music"
-alias pictures="cd ~/Pictures"
-alias videos="cd ~/Videos"
-alias docs="cd ~/Documents"
-alias downloads="cd ~/Downloads"
-alias desktop="cd ~/Desktop"
-alias dropbox="cd ~/Dropbox"
+alias music="Music"
+alias pictures="Pictures"
+alias videos="Videos"
+alias docs="Documents"
+alias downloads="Downloads"
+alias desktop="Desktop"
+alias dropbox="Dropbox"
 
 # Python
 alias manage="python $VIRTUAL_ENV/manage.py"

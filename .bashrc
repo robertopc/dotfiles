@@ -98,5 +98,5 @@ fi
 #    . /etc/bash_completion
 #fi
 
-# Insiro a função que customiza o prompt
-. ~/dotfiles/.bashprompt
+# Insiro o arquivo de funções
+. ~/dotfiles/.bashfunctions

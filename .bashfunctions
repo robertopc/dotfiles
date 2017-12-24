@@ -49,3 +49,9 @@ PROMPT_COMMAND=set_bash_prompt
 PS2='> '
 PS3='> '
 PS4='+ '  
+
+# cria o diretório e entra nele
+mkdircd() {
+  mkdir "$1"
+  cd "$1"
+}
