@@ -1,0 +1,130 @@
+[global_config]
+  focus = mouse
+  handle_size = 0
+  suppress_multiple_term_dialog = True
+  title_font = Fira Code 11
+  title_transmit_bg_color = "#006600"
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 5bf9578b-9f1d-40cf-b260-0d74dbf36c08
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:24
+      size = 1366, 712
+      title = /bin/bash
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 683
+      ratio = 0.5
+      type = HPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 356
+      ratio = 0.5
+      type = VPaned
+    [[[child5]]]
+      order = 1
+      parent = child1
+      position = 356
+      ratio = 0.5
+      type = VPaned
+    [[[terminal3]]]
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 06f6528b-2329-4ef5-8f3d-4eba583490d5
+    [[[terminal4]]]
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 5bf9578b-9f1d-40cf-b260-0d74dbf36c08
+    [[[terminal6]]]
+      order = 0
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = a204647c-40b8-4e7e-8841-a622885cb92b
+    [[[terminal7]]]
+      order = 1
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = abf63a99-ac82-4d16-951b-0d7444d14ecf
+  [[robertolayout]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 5bf9578b-9f1d-40cf-b260-0d74dbf36c08
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:24
+      size = 1366, 712
+      title = /bin/bash
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 683
+      ratio = 0.5
+      type = HPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 356
+      ratio = 0.5
+      type = VPaned
+    [[[child5]]]
+      order = 1
+      parent = child1
+      position = 356
+      ratio = 0.5
+      type = VPaned
+    [[[terminal3]]]
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 06f6528b-2329-4ef5-8f3d-4eba583490d5
+    [[[terminal4]]]
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 5bf9578b-9f1d-40cf-b260-0d74dbf36c08
+    [[[terminal6]]]
+      order = 0
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = a204647c-40b8-4e7e-8841-a622885cb92b
+    [[[terminal7]]]
+      order = 1
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = abf63a99-ac82-4d16-951b-0d7444d14ecf
+[plugins]
+[profiles]
+  [[default]]
+    audible_bell = True
+    background_color = "#300a24"
+    background_darkness = 0.94
+    background_image = None
+    background_type = transparent
+    copy_on_selection = True
+    font = Roboto Mono 11
+    foreground_color = "#ffffff"
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    use_system_font = False
