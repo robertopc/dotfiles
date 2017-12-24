@@ -21,15 +21,6 @@ alias hisg="history | grep -i"
 alias desligar="sudo shutdown -h 0"
 alias reiniciar="sudo shutdown -r 0"
 
-# folders
-alias music="Music"
-alias pictures="Pictures"
-alias videos="Videos"
-alias docs="Documents"
-alias downloads="Downloads"
-alias desktop="Desktop"
-alias dropbox="Dropbox"
-
 # Python
 alias manage="python $VIRTUAL_ENV/manage.py"
 alias virtualenv3="virtualenv -p /usr/bin/python3"

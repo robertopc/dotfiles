@@ -14,3 +14,12 @@ ln .bash_aliases ~
 ln .gitconfig ~
 ln .profile ~
 ln .vimrc ~
+
+# folders
+ln -s ~/Music ~/music
+ln -s ~/Pictures ~/pictures
+ln -s ~/Videos ~/videos
+ln -s ~/Documents ~/docs
+ln -s ~/Downloads ~/downloads
+ln -s ~/Desktop ~/desktop
+ln -s ~/Dropbox ~/dropbox
