@@ -18,8 +18,8 @@ alias hisl="history | less"
 alias hisg="history | grep -i"
 
 # sistema
-alias desligar="sudo shutdown -h 0"
-alias reiniciar="sudo shutdown -r 0"
+alias desligar="shutdown -h 0"
+alias reiniciar="shutdown -r 0"
 
 # Python
 alias manage="python $VIRTUAL_ENV/manage.py"

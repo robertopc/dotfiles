@@ -6,6 +6,8 @@
   handle_size = 0
   suppress_multiple_term_dialog = True
   title_font = Fira Code 11
+  title_inactive_bg_color = "#000000"
+  title_inactive_fg_color = "#ffffff"
   title_transmit_bg_color = "#006600"
   window_state = fullscreen
 [keybindings]
@@ -122,13 +124,12 @@
 [profiles]
   [[default]]
     audible_bell = True
-    background_color = "#300a24"
+    background_color = "#111111"
     background_darkness = 0.94
     background_image = None
-    background_type = transparent
     copy_on_selection = True
-    font = Roboto Mono 11
-    foreground_color = "#ffffff"
+    font = Roboto Mono 12
+    foreground_color = "#cccccc"
     scrollback_infinite = True
     scrollbar_position = hidden
     use_system_font = False
