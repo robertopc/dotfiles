@@ -18,9 +18,13 @@ alias hisl="history | less"
 alias hisg="history | grep -i"
 
 # sistema
-alias desligar="shutdown -h 0"
-alias reiniciar="shutdown -r 0"
+alias desligar="systemctl poweroff"
+alias reiniciar="systemctl reboot"
 
 # Python
 alias manage="python $VIRTUAL_ENV/manage.py"
 alias virtualenv3="virtualenv -p /usr/bin/python3"
+
+# Diretórios
+alias rmrf="rm -rf" # força exclusão de diretório
+

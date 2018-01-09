@@ -3,6 +3,7 @@
 set nu		  " numera as linhas
 set cursorline	  " destaca a linha do cursor
 set softtabstop=2 " converte tab para 2 espaces
+set nowrap	  " sem quebra de linha automatica
 
 " Vundle, the plug-in manager for Vim
 " http://github.com/VundleVim/Vundle.Vim
