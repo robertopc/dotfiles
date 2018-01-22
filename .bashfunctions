@@ -1,4 +1,4 @@
-# Esta função altera o prompt padrão
+ Esta função altera o prompt padrão
 # peguei esse código do github: https://github.com/ManuelSchneid3r/desktop/blob/master/sh/All
 # adicionado o simbol para deixar a # no root(antes estava o $)
 # adicionado verificação virtual environment
@@ -63,3 +63,10 @@ transfer() { if [ $# -eq 0 ]; then echo -e "No arguments specified. Usage:\necho
 tmpfile=$( mktemp -t transferXXX ); if tty -s; then basefile=$(basename "$1" | sed -e 's/[^a-zA-Z0-9._-]/-/g'); curl --progress-bar --upload-file "$1" "https://transfer.sh/$basefile" >> $tmpfile; else curl --progress-bar --upload-file "-" "https://transfer.sh/$1" >> $tmpfile ; fi; cat $tmpfile; rm -f $tmpfile; 
 echo # added to break line in the end
 } 
+
+
+genpasswd() {
+  local l=$1
+  [ "$l" == "" ] && l=16
+  tr -dc A-Za-z0-9_ < /dev/urandom | head -c ${l} | xargs
+}  
