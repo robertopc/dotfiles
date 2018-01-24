@@ -1,4 +1,4 @@
- Esta função altera o prompt padrão
+# Esta função altera o prompt padrão
 # peguei esse código do github: https://github.com/ManuelSchneid3r/desktop/blob/master/sh/All
 # adicionado o simbol para deixar a # no root(antes estava o $)
 # adicionado verificação virtual environment
