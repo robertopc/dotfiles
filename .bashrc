@@ -98,11 +98,8 @@ fi
 #    . /etc/bash_completion
 #fi
 
-# Insiro o arquivo de funções
-. ~/dotfiles/.bashfunctions
-
 # Instalacao das Funcoes ZZ (www.funcoeszz.net)
 export ZZOFF=""  # desligue funcoes indesejadas
 export ZZPATH="/home/roberto/github/funcoeszz/funcoeszz"  # script
-source "$ZZPATH"
+source $ZZPATH
 export ZZDIR="$HOME/github/funcoeszz/zz/"

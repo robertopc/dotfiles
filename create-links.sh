@@ -9,11 +9,8 @@ ln .config/terminator/config ~/.config/terminator/config
 mv ~/.config/openbox/lubuntu-rc.xml ~/.config/openbox/lubuntu-rc.xml.orig
 ln .config/openbox/lubuntu-rc.xml ~/.config/openbox/lubuntu-rc.xml
 
-ln .bashrc ~
-ln .bash_aliases ~
-ln .gitconfig ~
-ln .profile ~
-ln .vimrc ~
+# link all dotfiles
+find . -type f -name '.*' -exec ln {} ~ \;
 
 # folders
 ln -s ~/Music ~/music
@@ -23,5 +20,5 @@ ln -s ~/Documents ~/docs
 ln -s ~/Downloads ~/downloads
 ln -s ~/Desktop ~/desktop
 ln -s ~/Dropbox ~/dropbox
-ln -s ~/github/dotfiles ~/dotfiles
-ln -s ~/github/scripts ~/scripts
+ln -s ~/github/dotfiles ~
+ln -s ~/github/scripts ~
