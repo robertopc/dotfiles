@@ -98,8 +98,18 @@ fi
 #    . /etc/bash_completion
 #fi
 
-# Instalacao das Funcoes ZZ (www.funcoeszz.net)
-export ZZOFF=""  # desligue funcoes indesejadas
-export ZZPATH="/home/roberto/github/funcoeszz/funcoeszz"  # script
+# load dotfiles
+#for DOTFILE in `find /home/roberto/dotfiles/.*[^swp] -maxdepth 0`
+#do
+#  [ -f $DOTFILE ] && . $DOTFILE
+#done
+. ~/dotfiles/.prompt 
+. ~/dotfiles/.env
+. ~/dotfiles/.alias
+. ~/dotfiles/.inputrc
+. ~/dotfiles/.functions
+
+echo "Hello World! $USER"
+
 source $ZZPATH
-export ZZDIR="$HOME/github/funcoeszz/zz/"
+
