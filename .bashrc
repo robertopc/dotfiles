@@ -106,7 +106,7 @@ fi
 . ~/dotfiles/.prompt 
 . ~/dotfiles/.env
 . ~/dotfiles/.alias
-. ~/dotfiles/.inputrc
+#. ~/dotfiles/.inputrc
 . ~/dotfiles/.functions
 
 echo "Hello World! $USER"
