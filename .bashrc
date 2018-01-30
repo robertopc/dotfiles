@@ -109,7 +109,7 @@ fi
 #. ~/dotfiles/.inputrc
 . ~/dotfiles/.functions
 
-echo "Hello World! $USER"
+hello
 
 source $ZZPATH
 

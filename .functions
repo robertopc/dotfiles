@@ -18,4 +18,37 @@ genpasswd() {
   [ "$l" == "" ] && l=16
   tr -dc 'A-Za-z0-9_\{\}\[\]\(\)\\/^~?!@#$%&*`\-\+=,\ ' < /dev/urandom | head -c ${l} | xargs
 }
-  
+
+hello() {
+  local TTY=`tty | sed 's/.*\([0-9]\+\)$/\1/'`
+
+  case $TTY in
+     0)
+      echo "Hello world $USER!"
+      ;;
+    1)
+      ;;
+    2)
+      htop
+      ;;
+    3)
+      ls
+      ;;
+    4)
+      ll
+      ;;
+    *)
+      echo "others"
+      ;;
+  esac  
+
+  echo $TTY
+} 
+
+git_update() {
+  cd scripts
+  git pull
+  cd ../dotfiles
+  git pull
+}
+
