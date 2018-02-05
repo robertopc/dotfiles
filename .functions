@@ -12,13 +12,14 @@ tmpfile=$( mktemp -t transferXXX ); if tty -s; then basefile=$(basename "$1" | s
 echo # added to break line in the end
 } 
 
-
+# gera uma senha aleatória
 genpasswd() {
   local l=$1
   [ "$l" == "" ] && l=16
   tr -dc 'A-Za-z0-9_\{\}\[\]\(\)\\/^~?!@#$%&*`\-\+=,\ ' < /dev/urandom | head -c ${l} | xargs
 }
 
+# script ao iniciar os terminais
 hello() {
   local TTY=`tty | sed 's/.*\([0-9]\+\)$/\1/'`
 
@@ -45,10 +46,25 @@ hello() {
   echo $TTY
 } 
 
+# atualiza meus principais repositórios ao iniciar
 git_update() {
   cd scripts
   git pull
   cd ../dotfiles
   git pull
+}
+
+# procura pelo conteúdo de arquivos de uma extensão
+#
+# uso: grepext <busca> <extensao>
+# exemplo: grepex class php
+grepext() {
+
+  if [ ! $# -eq 2 ]; then
+    echo "uso: grepext <busca> <extensao>"
+    return 1;
+  fi
+
+  grep -inE "$1" `find . -name "*.$2"`
 }
 
