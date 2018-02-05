@@ -26,6 +26,7 @@ hello() {
   case $TTY in
      0)
       echo "Hello world $USER!"
+      git_update
       ;;
     1)
       ;;
@@ -52,6 +53,7 @@ git_update() {
   git pull
   cd ../dotfiles
   git pull
+  cd ~
 }
 
 # procura pelo conteúdo de arquivos de uma extensão
