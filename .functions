@@ -44,14 +44,16 @@ hello() {
       ;;
   esac  
 
-  echo $TTY
+  echo "tty $TTY"
 } 
 
 # atualiza meus principais repositórios ao iniciar
 git_update() {
+  echo "git pull scripts..."
   cd scripts
   git pull
   cd ../dotfiles
+  echo "git pull dotfiles..."
   git pull
   cd ~
 }
