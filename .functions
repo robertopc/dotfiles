@@ -31,7 +31,7 @@ hello() {
     1)
       ;;
     2)
-      htop
+      htop -d 10 
       ;;
     3)
       ls
