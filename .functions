@@ -72,3 +72,14 @@ grepext() {
   grep -inE "$1" `find . -name "*.$2"`
 }
 
+# codifica string base64
+base64encode() {
+
+  echo "$1" | base64
+}
+
+# decodifica string base64
+base64decode() {
+
+  echo "$1" | base64 --decode
+}
