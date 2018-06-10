@@ -19,6 +19,5 @@ ln -s ~/Videos ~/videos
 ln -s ~/Documents ~/docs
 ln -s ~/Downloads ~/downloads
 ln -s ~/Desktop ~/desktop
-ln -s ~/Dropbox ~/dropbox
 ln -s ~/github/dotfiles ~
 ln -s ~/github/scripts ~
