@@ -83,3 +83,13 @@ base64decode() {
 
   echo "$1" | base64 --decode
 }
+
+# gera um CPF sem . e - a partir do zzcpf
+gencpf() {
+  zzcpf $1 | tr -d '.-'
+}
+
+# gera um CNPJ sem . e - a partir do zzcnpj
+gencnpj() {
+  zzcnpj $1 | tr -d './-'
+}
