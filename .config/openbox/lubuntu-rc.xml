@@ -381,6 +381,12 @@
         <command>lxsession-default tasks</command>
       </action>
     </keybind>
+    <!-- Launch a terminal on Super + T-->
+    <keybind key="W-T">
+      <action name="Execute">
+        <command>lxsession-default terminal</command>
+      </action>
+    </keybind>
     <!-- Launch a terminal on Ctrl + Alt + T-->
     <keybind key="C-A-T">
       <action name="Execute">
