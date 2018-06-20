@@ -404,7 +404,7 @@
       </action>
     </keybind>    
     <!-- Lock the screen on Super + l-->
-    <keybind key="S-l">
+    <keybind key="W-l">
       <action name="Execute">
         <command>lxsession-default lock</command>
       </action>
