@@ -9,4 +9,6 @@
 
 [alias]
 	logone = log --oneline
+	up=push
+	down=pull
 	
