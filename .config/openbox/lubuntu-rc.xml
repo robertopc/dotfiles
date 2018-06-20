@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Turquoise Nights Ob</name>
+    <name>Nightmare-02</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -402,7 +402,7 @@
       <action name="Execute">
         <command>lxsession-default lock</command>
       </action>
-    </keybind>    
+    </keybind>
     <!-- Lock the screen on Super + l-->
     <keybind key="W-l">
       <action name="Execute">
