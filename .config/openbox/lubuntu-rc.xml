@@ -402,6 +402,12 @@
       <action name="Execute">
         <command>lxsession-default lock</command>
       </action>
+    </keybind>    
+    <!-- Lock the screen on Super + Alt + l-->
+    <keybind key="S-A-l">
+      <action name="Execute">
+        <command>lxsession-default lock</command>
+      </action>
     </keybind>
     <!-- Keybinding for Volume management -->
     <keybind key="XF86AudioRaiseVolume">
