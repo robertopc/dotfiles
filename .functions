@@ -29,18 +29,17 @@ hello() {
       git_update
       ;;
     1)
-      ;;
-    2)
       htop -d 10 
       ;;
-    3)
-      ls
-      ;;
-    4)
+    2)
       ll
       ;;
+    3)
+      ll
+      ;;
+    4)
+      ;;
     *)
-      echo "others"
       ;;
   esac  
 
