@@ -24,18 +24,19 @@ hello() {
   local TTY=`tty | sed 's/.*\([0-9]\+\)$/\1/'`
 
   case $TTY in
-     0)
-      echo "Hello world $USER!"
-      git_update
+    0)
       ;;
     1)
-      htop -d 10 
+      figlet "Hello world $USER!"
+      git_update
       ;;
     2)
+      htop -d 10 
       ;;
     3)
       ;;
     4)
+      fortune | cowsay
       ;;
     *)
       ;;
