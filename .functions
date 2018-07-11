@@ -92,8 +92,3 @@ gencnpj() {
   zzcnpj $1 | tr -d './-'
 }
 
-# fala uma frase em portugues
-falar(){
-  espeak -vpt -s 100 -p 0 -a 200 "$1"
-  echo "$1" >> ~/falar.log
-}
