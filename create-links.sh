@@ -9,6 +9,10 @@ ln .config/terminator/config ~/.config/terminator/config
 mv ~/.config/openbox/lubuntu-rc.xml ~/.config/openbox/lubuntu-rc.xml.orig
 ln .config/openbox/lubuntu-rc.xml ~/.config/openbox/lubuntu-rc.xml
 
+mkdir ~/.vim
+mkdir ~/.vim/bundle/
+ln -s ~/dotfiles/.vim/bundle/Vundle.vim ~/.vim/bundle/
+
 # link all dotfiles
 find . -type f -name '.*' -exec ln {} ~ \;
 
