@@ -29,3 +29,7 @@ alias virtualenv3="virtualenv -p /usr/bin/python3"
 # Diretórios
 alias rmrf="rm -rf" # força exclusão de diretório
 
+# SSH
+alias ssh-vultr-dom="ssh 144.202.15.212"
+alias ssh-vultr-vagas="ssh 104.207.134.14"
+alias ssh-ovh-vagas="ssh 158.69.63.192"
