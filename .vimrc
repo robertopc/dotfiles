@@ -5,6 +5,10 @@ set cursorline	  " destaca a linha do cursor
 set softtabstop=2 " converte tab para 2 espaces
 set nowrap	  " sem quebra de linha automatica
 
+"syntax enable
+"set background=dark
+"colorscheme solarized8
+
 " Vundle, the plug-in manager for Vim
 " http://github.com/VundleVim/Vundle.Vim
 

@@ -19,24 +19,50 @@ genpasswd() {
   tr -dc 'A-Za-z0-9_\{\}\[\]\(\)\\/^~?!@#$%&*`\-\+=,\ ' < /dev/urandom | head -c ${l} | xargs
 }
 
+# função para o tty 0
+fntty0() {
+>/tmp/.hellotty0
+figlet "Hello world $USER!"
+git_update
+}
+
 # script ao iniciar os terminais
 hello() {
   local TTY=`tty | sed 's/.*\([0-9]\+\)$/\1/'`
 
+  sleep $TTY
+
   case $TTY in
     0)
+      fntty0
       ;;
     1)
-      figlet "Hello world $USER!"
-      git_update
+      if [ ! -e /tmp/.hellotty0 ]; then
+	fntty0
+      else
+	fortune | cowsay
+      fi
       ;;
     2)
-      htop -d 10 
+      if [ ! -e /tmp/.hellotty0 ]; then
+	fortune | cowsay
+      else
+	htop -d 10 
+      fi
       ;;
     3)
+      if [ ! -e /tmp/.hellotty0 ]; then
+	htop -d 10 
+      else
+	ping 1.1.1.1
+      fi
       ;;
     4)
-      fortune | cowsay
+      if [ ! -e /tmp/.hellotty0 ]; then
+	ping 1.1.1.1
+      else
+	ll
+      fi
       ;;
     *)
       ;;
