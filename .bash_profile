@@ -1,0 +1,1 @@
+source wp-completion.bash
