@@ -127,8 +127,7 @@
   [[default]]
     audible_bell = True
     background_color = "#002b36"
-    background_darkness = 0.93
-    background_image = None
+    background_darkness = 0.8
     background_type = transparent
     copy_on_selection = True
     cursor_color = "#cccccc"

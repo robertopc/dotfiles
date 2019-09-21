@@ -7,3 +7,4 @@ export PATH='/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin':"$P
 export PATH='/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin':"$PATH"
 export PATH='/home/roberto/.linuxbrew/bin:/home/roberto/.linuxbrew/sbin':"$PATH"
 export PATH='/bin:/sbin':"$PATH"
+export PATH='/bin:/sbin':"$PATH"
