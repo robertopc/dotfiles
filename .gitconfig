@@ -11,4 +11,9 @@
 	logone = log --oneline
 	up=push
 	down=pull
+
+[hub]
+	protocol = ssh
 	
+[credential]
+	helper = cache
