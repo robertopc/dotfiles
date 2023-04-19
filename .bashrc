@@ -105,20 +105,11 @@ fi
 #fi
 
 # load dotfiles
-#for DOTFILE in `find /home/roberto/dotfiles/.*[^swp] -maxdepth 0`
-#do
-#  [ -f $DOTFILE ] && . $DOTFILE
-#done
 . ~/dotfiles/.prompt 
 . ~/dotfiles/.env
 . ~/dotfiles/.alias
 #. ~/dotfiles/.inputrc
 . ~/dotfiles/.functions
-
-hello
-
-source $ZZPATH
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
